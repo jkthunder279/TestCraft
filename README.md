@@ -15,8 +15,8 @@ This project is an AI-driven prototype that:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/jkthunder279/AI-ML-Intern-Task-Assignment
-cd https://github.com/jkthunder279/AI-ML-Intern-Task-Assignment
+git clone https://github.com/jkthunder279/AI-ML-Intern-Task-Assignment.git
+cd AI-ML-Intern-Task-Assignment
 ```
 
 2. Install the required packages:
