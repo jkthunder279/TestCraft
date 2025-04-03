@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Option 1: Run each script individually
+Run each script individually
 
 #### Task 1: Web Scraping & UI Element Extraction
 ```bash
@@ -37,25 +37,21 @@ python web_scraper.py --url https://demoblaze.com --output elements.json
 
 #### Task 2: Test Case Generation
 ```bash
-python test_case_generator.py --input elements.json --output test_cases.xlsx --model llama3 --num_tests 5
+python test_case.py --input elements.json --output test_cases.xlsx --model llama3 --num_tests 5
 ```
 
 #### Task 3: Selenium Script Generation
 ```bash
-python selenium_script_generator.py --input test_cases.xlsx --output test_scripts.xlsx --model llama3 --url https://demoblaze.com
+python selenium.py --input test_cases.xlsx --output test_scripts.xlsx --model llama3 --url https://demoblaze.com
 ```
 
-### Option 2: Run all tasks at once
-```bash
-python run_all.py --url https://demoblaze.com --model llama3 --num_tests 5
-```
+
 
 ## File Structure
 
 - `web_scraper.py`: Script for Task 1 - Extracts UI elements
-- `test_case_generator.py`: Script for Task 2 - Generates test cases
-- `selenium_script_generator.py`: Script for Task 3 - Generates Selenium scripts
-- `run_all.py`: Combined script to run all tasks in sequence
+- `test_case.py`: Script for Task 2 - Generates test cases
+- `selenium.py`: Script for Task 3 - Generates Selenium scripts
 - `elements.json`: Output from Task 1 - Extracted UI elements
 - `test_cases.xlsx`: Output from Task 2 - Generated test cases
 - `test_scripts.xlsx`: Output from Task 3 - Generated Selenium scripts
