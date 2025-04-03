@@ -5,9 +5,10 @@ import requests
 API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-alpha"
 HEADERS = {"Authorization": "Bearer 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"}
 
-df_test_cases = pd.read_excel("TC.xlsx")
+df_test_cases = pd.read_excel("test_cases.xlsx")
 
 def generate_selenium_script(test_case):
+    # giving prompt
     prompt = f"""
     You are an expert in Python and Selenium. Generate a Selenium test script based on the following test case:
 
