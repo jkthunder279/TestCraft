@@ -15,8 +15,8 @@ This project is an AI-driven prototype that:
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/jkthunder279/AI-ML-Intern-Task-Assignment
+cd https://github.com/jkthunder279/AI-ML-Intern-Task-Assignment
 ```
 
 2. Install the required packages:
@@ -32,17 +32,17 @@ Run each script individually
 
 #### Task 1: Web Scraping & UI Element Extraction
 ```bash
-python web_scraper.py --url https://demoblaze.com --output elements.json
+python web_scraper.py
 ```
 
 #### Task 2: Test Case Generation
 ```bash
-python test_case.py --input elements.json --output test_cases.xlsx --model llama3 --num_tests 5
+python test_case.py --input elements.json --output test_cases.xlsx --model HuggingFaceH4/zephyr-7b-alpha --num_tests 5
 ```
 
 #### Task 3: Selenium Script Generation
 ```bash
-python selenium.py --input test_cases.xlsx --output test_scripts.xlsx --model llama3 --url https://demoblaze.com
+python selenium.py
 ```
 
 
@@ -65,7 +65,7 @@ python selenium.py --input test_cases.xlsx --output test_scripts.xlsx --model ll
 - Saved structured data in JSON format
 
 ### Task 2: Test Case Generation
-- Used GenAI (huggingface Zephyr-7B-Alpha model) to analyze UI elements
+- Used GenAI (huggingface HuggingFaceH4/zephyr-7b-alpha model) to analyze UI elements
 - Generated meaningful test cases based on identified elements
 - Focused on key user journeys and typical interactions
 - Structured test cases with ID, scenario, steps, and expected results
