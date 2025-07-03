@@ -1,4 +1,4 @@
-# AI-ML-Intern-Task-Assignment
+# TestCraft || crafting test based on UI
 
 This project is an AI-driven prototype that:
 1. Scrapes and analyzes website elements
